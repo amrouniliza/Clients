@@ -1,0 +1,7 @@
+organization=amrouniliza
+projectKey=amrouniliza_Clients
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.54910
+dashboardUrl=https://sonarcloud.io/dashboard?id=amrouniliza_Clients
+ceTaskId=AY_syaSR5eqp0ywEK3Ly
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AY_syaSR5eqp0ywEK3Ly
