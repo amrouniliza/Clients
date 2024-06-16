@@ -24,7 +24,6 @@ export class ClientsService {
       where: { id },
     });
     if (!client) {
-      console.log(`Client with ID ${id} not found`)
       this.logger.warn(`Client with ID ${id} not found`);
     }
     return client;
@@ -38,6 +37,7 @@ export class ClientsService {
     const existingClient = await this.findOne(id);
     if (!existingClient) {
       this.logger.warn(`Client with ID ${id} not found`);
+      return null;
     }
     return this.databaseService.client.update({
       where: { id },
@@ -50,6 +50,7 @@ export class ClientsService {
     const existingClient = await this.findOne(id);
     if (!existingClient) {
       this.logger.warn(`Client with ID ${id} not found`);
+      return null;
     }
     return this.databaseService.client.delete({ where: { id } });
   }
